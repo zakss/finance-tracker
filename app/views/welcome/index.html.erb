@@ -2,3 +2,5 @@
 <p>
   The time is now: <%= Time.now %>
 </p>
+
+<%= link_to "log out", destroy_user_session_path, data: { "turbo-method": :delete } %>
