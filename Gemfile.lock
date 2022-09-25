@@ -100,7 +100,15 @@ GEM
     devise-i18n (1.10.2)
       devise (>= 4.8.0)
     digest (3.1.0)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     erubi (1.11.0)
+    faraday (2.5.2)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.0)
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -114,6 +122,7 @@ GEM
       activesupport (>= 5.0.0)
     jsbundling-rails (1.0.3)
       railties (>= 6.0.0)
+    json (2.6.2)
     loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -178,6 +187,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    redis (3.3.5)
     regexp_parser (2.5.0)
     reline (0.3.1)
       io-console (~> 0.5)
@@ -185,6 +195,7 @@ GEM
       actionpack (>= 5.0)
       railties (>= 5.0)
     rexml (3.2.5)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -248,11 +259,15 @@ DEPENDENCIES
   devise
   devise-bootstrap5
   devise-i18n
+  dotenv-rails
+  faraday
   jbuilder
   jsbundling-rails
+  json (~> 2.5, >= 2.5.1)
   pg
   puma (~> 5.0)
   rails (~> 7.0.4)
+  redis
   sassc-rails
   selenium-webdriver
   sprockets-rails
