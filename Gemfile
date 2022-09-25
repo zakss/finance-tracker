@@ -33,8 +33,10 @@ gem "cssbundling-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem "sassc-rails"
+
 # Use Redis adapter to run Action Cable in production
-gem "redis"
+# gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -46,14 +48,6 @@ gem "redis"
 gem "devise"
 gem "devise-i18n"
 gem "devise-bootstrap5"
-
-# gem "finicity-ruby"
-
-# Tuto https://dev.to/blindbat/requesting-data-from-an-api-with-rails-47b4
-gem 'faraday'
-gem 'json', '~> 2.5', '>= 2.5.1'
-gem 'dotenv-rails', groups: [:development, :test]
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
@@ -61,7 +55,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-gem "sassc-rails"
+# gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
